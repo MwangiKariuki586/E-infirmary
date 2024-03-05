@@ -1,0 +1,33 @@
+.main{
+    background-color: #e2decd;
+    height: 100vh;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.stethoscope{
+    width: 50%;
+    height: 20%;
+    border-radius: 10px;
+    margin-top: 15%;
+}
+.decription_heading{
+    margin-top: 20%;
+}
+.description{
+    margin-bottom: 15%;
+}
+.call_to_action{
+  
+    border-radius: 6px;
+    color: white;
+    border: 1px solid transparent;
+    padding:2px 18px;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #00565b;
+    cursor: pointer;
+    transition: border-color 0.25s;
+  
+}
