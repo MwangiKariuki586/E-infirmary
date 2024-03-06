@@ -3,3 +3,9 @@
 :root{
     font-family: "Poppins", sans-serif;
 }
+.main{
+    background-color: #e2decd;
+    height: 98vh;
+    text-align: center;
+    border-radius: 10px;
+}
