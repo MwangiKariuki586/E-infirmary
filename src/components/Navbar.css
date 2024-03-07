@@ -1,0 +1,9 @@
+nav{
+    position: absolute;
+    bottom: 0;
+    border: 2px solid #e2decd;
+    background-color: white;
+    width:calc(100% - 4px);
+    height: 5%;
+    border-radius: 0 0 5px 5px ;
+}

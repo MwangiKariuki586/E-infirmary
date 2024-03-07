@@ -2,10 +2,24 @@
 
 :root{
     font-family: "Poppins", sans-serif;
+    margin: 0;
 }
 .main{
     background-color: #e2decd;
-    height: 98vh;
+    height: 100vh;
     text-align: center;
     border-radius: 10px;
+    position: relative;
+}
+.btn{
+    border-radius: 6px;
+    color: white;
+    border: 1px solid transparent;
+    padding:2px 18px;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #00565b;
+    cursor: pointer;
+    transition: border-color 0.25s;
 }
