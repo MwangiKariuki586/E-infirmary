@@ -4,8 +4,8 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 const Categories = () => {
   return (
-    <div className="main">
-      <h1 className="categories_heading">Categories</h1>
+    <div className="">
+      <h1 className="heading">Categories</h1>
       <div className="categories">
         <div className="categories1">
           <div className="card">Medical Prescriptions</div>
@@ -33,7 +33,7 @@ const Categories = () => {
         </div>
         <div className="span3"></div>
       </div>
-      <h2>Health Facts</h2>
+      <h2 className="heading">Health Facts</h2>
       <div className="health_facts">
         <Carousel
           showArrows={false}

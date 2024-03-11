@@ -3,8 +3,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    
-
+    background-color: #e2decd;
+    min-height: 90dvh;
 }
 .lock{
     width: 80px;
@@ -28,14 +28,15 @@
     max-width: 300px; 
     border-radius: 60px 0;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
-   
-    
 }
 
 .input_field{
-    margin-bottom: 5%;
+    
     border-radius: 10px;
     border: 1px solid #ffaa44;
     outline: none;
     padding: 0.5em;
+}
+.spaced{
+    margin-bottom: 5%;
 }
