@@ -4,7 +4,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 const Categories = () => {
   return (
-    <div className="">
+    <div className="categories_wrapper">
       <h1 className="heading">Categories</h1>
       <div className="categories">
         <div className="categories1">

@@ -1,5 +1,9 @@
-nav{
-    position: absolute;
+.wrapper{
+    position: relative;
+}
+.navbar{
+    z-index: 100;
+    position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
@@ -17,6 +21,3 @@ nav{
     aspect-ratio: 1/1;
     border-radius: 50%;
 }
-/* .profile:hover{
-    border: 2px solid #ffaa44;
-} */

@@ -2,14 +2,15 @@
 
 :root{
     font-family: "Poppins", sans-serif;
+    
 }
-.main{
+/* .main{
     background-color: #e2decd;
     height: 100dvh;
     text-align: center;
     border-radius: 10px;
     position: relative;
-}
+} */
 .btn{
     border-radius: 6px;
     color: white;

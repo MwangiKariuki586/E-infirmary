@@ -4,7 +4,7 @@ import { RiHome7Line, RiLogoutCircleRLine } from "react-icons/ri";
 import { MdOutlineCategory } from "react-icons/md";
 import { BsSearch } from "react-icons/bs";
 import the_blueprint from "../assets/the_blueprint.jpg";
-
+import { Link } from "react-router-dom";
 const Navbar = () => {
   const [clickedIcon, setClickedIcon] = useState(null);
 
@@ -27,36 +27,51 @@ const Navbar = () => {
       transform: clickedIcon === iconName ? "scale(1.5)" : "scale(1)",
     };
   };
-
+  const linkStyles = {
+    textDecoration: "none",
+    color: "inherit",
+  };
   return (
-    <nav>
-      <MdOutlineCategory
-        style={getIconStyle("MdOutlineCategory")}
-        onClick={() => handleClick("MdOutlineCategory")}
-      />
-      <BsSearch
-        style={getIconStyle("BsSearch")}
-        onClick={() => handleClick("BsSearch")}
-      />
-      <RiHome7Line
-        style={getIconStyle("RiHome7Line")}
-        onClick={() => handleClick("RiHome7Line")}
-      />
-      <RiLogoutCircleRLine
-        style={{
-          ...getIconStyle("RiLogoutCircleRLine"),
-          rotate: "-90deg",
-        }}
-        onClick={() => handleClick("RiLogoutCircleRLine")}
-      />
-      <img
-        className="profile"
-        src={the_blueprint}
-        alt=""
-        style={getIconStyle("profile")}
-        onClick={() => handleClick("profile")}
-      />
-    </nav>
+    <div className="wrapper">
+      <nav className="navbar">
+        <Link to={"/categories"} style={linkStyles}>
+          <MdOutlineCategory
+            style={getIconStyle("MdOutlineCategory")}
+            onClick={() => handleClick("MdOutlineCategory")}
+          />
+        </Link>
+        <Link to={"/search"} style={linkStyles}>
+          <BsSearch
+            style={getIconStyle("BsSearch")}
+            onClick={() => handleClick("BsSearch")}
+          />
+        </Link>
+        <Link to={"/"} style={linkStyles}>
+          <RiHome7Line
+            style={getIconStyle("RiHome7Line")}
+            onClick={() => handleClick("RiHome7Line")}
+          />
+        </Link>
+        <Link to={"/login"} style={linkStyles}>
+          <RiLogoutCircleRLine
+            style={{
+              ...getIconStyle("RiLogoutCircleRLine"),
+              rotate: "-90deg",
+            }}
+            onClick={() => handleClick("RiLogoutCircleRLine")}
+          />
+        </Link>
+        <Link to={"/profile"} style={linkStyles}>
+          <img
+            className="profile"
+            src={the_blueprint}
+            alt=""
+            style={getIconStyle("profile")}
+            onClick={() => handleClick("profile")}
+          />
+        </Link>
+      </nav>
+    </div>
   );
 };
 

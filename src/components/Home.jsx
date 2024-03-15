@@ -3,7 +3,7 @@ import stethoscope from "../assets/MEDICAL.jpg";
 import "./home.css";
 const home = () => {
   return (
-    <div className="main">
+    <div className="home">
       <img className="stethoscope" src={stethoscope} alt="" />
       <h1 className="decription_heading">We offer medical assistance 24/7</h1>
       <p className="description">

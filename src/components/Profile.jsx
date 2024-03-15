@@ -5,7 +5,7 @@ const Profile = () => {
   return (
     <div className="container">
       <h1>Patient Profile</h1>
-      <form className="container">
+      <form className="form_wrapper">
         <label htmlFor="Full_name">Full name</label>
         <input className="input_field" type="text" />
         <label htmlFor="Full_name">Email</label>

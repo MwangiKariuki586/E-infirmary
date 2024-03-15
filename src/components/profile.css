@@ -4,7 +4,6 @@
     align-items: center;
     justify-content: space-around;
     background-color: #e2decd;
-    min-height: 90dvh;
 }
 .lock{
     width: 80px;
@@ -15,23 +14,15 @@
     left: 50%;
     transform: translateX(-50%);
 }
-.form{
-    position: relative;
+.form_wrapper{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    background-color: #fff;
-    margin: 0 auto 15% auto;
-    padding: 3em;
-    width: 75%;
-    max-width: 300px; 
-    border-radius: 60px 0;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    justify-content: space-around;
+    margin-bottom: 15%;
 }
 
 .input_field{
-    
     border-radius: 10px;
     border: 1px solid #ffaa44;
     outline: none;
