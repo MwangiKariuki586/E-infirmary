@@ -1,10 +1,11 @@
 import React from "react";
 import "./Signup.css";
 import lock from "../assets/lock.jpg";
+import { Link } from "react-router-dom";
 const Signup = () => {
   return (
-    <div className="container main">
-      <h1>Sign Up</h1>
+    <div className="container">
+      <h1 className="heading">Sign Up</h1>
       <form className="form">
         <img className="lock" src={lock} alt="" />
         <label htmlFor="Full_name">Full name</label>
@@ -16,6 +17,7 @@ const Signup = () => {
         <label htmlFor="Full_name">Confirm Password</label>
         <input className="input_field" type="password" />
         <button className="btn spaced">Submit</button>
+        <Link to={"/login"}>Already have an account?</Link>
       </form>
     </div>
   );

@@ -1,16 +1,26 @@
 .search_wrapper{
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+.most_searched{
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 .search_menu{
-    position: absolute;
+    position: fixed;
     width: 100%;
     top: 0;
+    right: 0;
     padding: 5px 0;
     border-radius: 10px 10px 0 0;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: #fff;
+
 }
 .e_logo{
     width: 20px;
@@ -19,7 +29,7 @@
 }
 .search_bar{
     width: 80%;
-    background-color: #d8d8d8;
+    background-color: #fff;
     height: 1.3rem;
     border-radius: 10px;
     border: none;
@@ -28,4 +38,11 @@
 }
 .search_bar::placeholder{
     text-align: center;
+}
+.search-item:hover{
+    transition:padding 1s ease;
+    border: 1px solid #ffaa44;
+    border-radius: 10px;
+    padding: 0 10px;
+   
 }
