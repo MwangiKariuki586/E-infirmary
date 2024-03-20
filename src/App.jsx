@@ -5,8 +5,11 @@ import Navbar from "./components/Navbar";
 import Signup from "./components/Signup";
 import Login from "./components/Login";
 import Profile from "./components/Profile";
+
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import Search from "./components/Search";
+import Loading from "./components/Loading";
+
 function App() {
   const Mainlayout = () => {
     return (
@@ -45,6 +48,10 @@ function App() {
         {
           path: "/search",
           element: <Search />,
+        },
+        {
+          path: "/loading",
+          element: <Loading />,
         },
       ],
     },
