@@ -112,3 +112,8 @@
     border-radius: 6px;
     font-size: 12px;
 }
+@media (min-width:1024px) {
+    .categories_wrapper{
+        margin: 0 25%;
+    }
+}
